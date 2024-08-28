@@ -1,8 +1,6 @@
-![publish](https://github.com/telekom-mms/ansible-vector/workflows/publish/badge.svg)
-
 # ansible-vector
 
-This is a ansible collection to set up [vector](https://vector.dev) on debian and redhat based systems.
+This is a ansible role to set up [vector](https://vector.dev) on debian and redhat based systems.
 It translates the YAML configuration to TOML, so any configuration is possible.
 
 Currently only amd64, arch64, arch7 through deb and rpm packages are supported.
@@ -48,6 +46,7 @@ sinks:
 ```yaml
 - name: Install and configure vector
   hosts: all
+  become: true
   vars:
     sources:
       journald:
@@ -65,5 +64,15 @@ sinks:
         inputs: ["journald"]
         address: "vector.example.com:9000"
   roles:
-    - telekom_mms.vector.vector
+    - dss09.vector
+```
+## requirements.yml
+
+```
+---
+roles:
+  - name: dss09.vector
+    src: https://github.com/dss09/ansible-vector
+    version: "master"
+
 ```
