@@ -1,5 +1,6 @@
 ---
-namespace: telekom_mms
+
+namespace: dss09
 name: vector
 version: 1.0.0
 readme: README.md
