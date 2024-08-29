@@ -39,7 +39,7 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
       - name: Run Linting
         uses: ansible/ansible-lint-action@cad5176ea6f24a38f909d688bd467ec8d942d7e1 # v6.17.0
@@ -50,7 +50,7 @@ jobs:
 #
 #    steps:
 #      - name: Check out code
-#        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+#        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 #        with:
 #          path: ansible_collections/telekom_mms/vector
 #
