@@ -3,7 +3,7 @@
 This is a ansible role to set up [vector](https://vector.dev) on debian and redhat based systems.
 It translates the YAML configuration to TOML, so any configuration is possible.
 
-Currently only amd64, arch64, arch7 through deb and rpm packages are supported.
+Currently only amd64, aarch64, and armv7l packages are supported.
 
 ## Variables
 
