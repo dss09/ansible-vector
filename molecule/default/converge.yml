@@ -20,4 +20,4 @@
   tasks:
     - name: Include role vector
       ansible.builtin.include_role:
-        name: telekom_mms.vector.vector
+        name: dss09.vector
