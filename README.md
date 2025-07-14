@@ -1,6 +1,6 @@
 # ansible-vector
 
-This is a ansible role to set up [vector](https://vector.dev) on debian and redhat based systems.
+This is an Ansible role to set up [vector](https://vector.dev) on Debian and Red Hat-based systems.
 It translates the YAML configuration to TOML, so any configuration is possible.
 
 Currently only amd64, arch64, arch7 through deb and rpm packages are supported.
@@ -21,7 +21,7 @@ Currently only amd64, arch64, arch7 through deb and rpm packages are supported.
 | transforms               | no       | false                   | shape your data as it moves through your Vector topology [link](https://vector.dev/docs/reference/configuration/transforms/)
 | sinks                    | yes      | false                   | deliver your observability data to a variety of destinations [link](https://vector.dev/docs/reference/configuration/sinks/)
 
-## Example for configuration with ansible
+## Example configuration with Ansible
 ```yaml
 sources:
   journald:

@@ -11,7 +11,7 @@ authors:
   - Daniel Uhlmann <daniel.uhlmann@telekom.de>
   - Christopher Grau <c.grau@telekom.de>
 description: >-
-  This is a ansible collection to set up [vector](https://vector.dev) on debian and redhat based systems.
+  This is an Ansible collection to set up [vector](https://vector.dev) on Debian and Red Hat-based systems.
   It translates the YAML configuration to TOML, so any configuration is possible.
 license_file: LICENSE
 tags:
